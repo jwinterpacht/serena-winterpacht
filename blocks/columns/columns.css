@@ -19,6 +19,11 @@
   display: block;
 }
 
+/* Add space between the middle and bottom rows */
+.columns > div:nth-of-type(2) {
+  margin-bottom: 32px; /* Adjust the value as needed */
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
@@ -29,5 +34,10 @@
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+
+  /* Ensure the added margin is not too large on wider screens */
+  .columns > div:nth-of-type(2) {
+    margin-bottom: 32px; /* Adjust if necessary */
   }
 }
