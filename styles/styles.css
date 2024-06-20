@@ -133,27 +133,29 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: 'Snell Roundhand', cursive;
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  width: 600px;
+  padding: 40px 0; /* 20px 240px */
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: var(--text-color);
+  background-color: pink;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+  font-size: 50px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  background-color: #FF69B4;
   cursor: pointer;
 }
 
