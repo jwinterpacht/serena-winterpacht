@@ -142,7 +142,7 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 header .nav-brand {
   grid-area: brand;
   flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
+  font-size: var(--heading-font-size-xl); /* was small */
   font-weight: 700;
   line-height: 1;
   font-family: var(--header-font-family);
@@ -175,6 +175,15 @@ header nav .nav-sections ul  {
   font-weight: 500;
   font-family: var(--header-font-family);
 }
+
+header nav .nav-sections ul li a {
+  font-size: var(--heading-font-size-m); /* font size for made to order, couture, pieces, and styling */
+}
+
+header nav .nav-sections ul li.nav-drop {
+  font-size: var(--heading-font-size-m); /* font size for shop text */
+}
+
 
 header nav .nav-sections ul > li {
   font-weight: 700;
