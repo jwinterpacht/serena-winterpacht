@@ -12,15 +12,15 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: black; /* was #035fe6 */
+  --link-hover-color: #FF69B4; /* was #136ff6 */
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
 
   /* fonts */
-  --body-font-family: 'Arial Narrow', sans-serif;
+  --body-font-family: 'Gill Sans', sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
   --header-font-family: 'Snell Roundhand', cursive;
@@ -64,7 +64,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.6;
+  line-height: 1; /* originally 1.6 */
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
@@ -88,9 +88,21 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  text-align: center; /* center h1 */
+  font-family: 'Didot', serif;
+}
+h2 {
+  font-size: var(--heading-font-size-xl);
+  text-align: center; /* center h2 */
+  font-family: 'Snell Roundhand', cursive;
+}
+h3 {
+  font-size: var(--heading-font-size-xxl);
+  text-align: center; /* center h3 */
+  font-family: 'Didot', serif;
+}
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
